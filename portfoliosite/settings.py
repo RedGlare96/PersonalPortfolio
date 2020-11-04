@@ -28,7 +28,7 @@ SECRET_KEY = config['key']['keystring']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['redglare96.pythonanywhere.com']
 
 
 # Application definition

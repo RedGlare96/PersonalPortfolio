@@ -6,7 +6,7 @@ from django.db import models
 class Projects(models.Model):
     title = models.CharField(max_length=100)
     description = models.CharField(max_length=200)
-    image = models.ImageField(upload_to='porfolio/images/')
+    image = models.ImageField(upload_to='portfolio/images/')
     url = models.URLField(blank=True)
 
     def __str__(self):
