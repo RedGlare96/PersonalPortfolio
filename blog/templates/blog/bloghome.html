@@ -4,13 +4,15 @@
     <h1 class="masthead-heading text-uppercase mb-0 animate__animated animate__lightSpeedInLeft">Ashwin's Blog</h1>
     <h2 class="animate__animated animate__lightSpeedInLeft animate__delay-1s">Total blogs: {{ blogdata.count }}</h2>
 </header>
-{% for blog in blogdata %}
+<div class="container-fluid">
+    {% for blog in blogdata %}
 <div class="row pt-5 animate__animated animate__fadeInUp">
-    <div class="col-6 ml-5 text-truncate">
+    <div class="col-6">
         <a href="{% url 'blog:blogmain' blog.id %}"><h1>{{ blog.title }}</h1></a>
         <p>{{ blog.post_date }}</p>
-        <p>{{ blog.content|striptags}}</p>
+        <p class="text-truncate">{{ blog.content|striptags}}</p>
     </div>
 </div>
 {% endfor %}
+</div>
 {% endblock %}
