@@ -5,7 +5,9 @@
     <p class="animate__animated animate__fadeInUp">{{ blog.post_date }}</p>
     <br>
     <p>{{ blog.content|safe }}</p>
-    <a href="{% url 'blog:bloghome' %}"><button class="btn btn-primary float-left" data-aos="fade-up">Back to blogs</button></a>
-    <a href="#mainNav"><button class="btn btn-primary float-right" data-aos="fade-up">Back to top</button></a>
+</div>
+<div class="container pt-3 pb-5">
+    <a href="{% url 'blog:bloghome' %}"><button class="btn btn-primary float-left">Back to blogs</button></a>
+    <a href="#mainNav"><button class="btn btn-primary float-right">Back to top</button></a>
 </div>
 {% endblock %}
